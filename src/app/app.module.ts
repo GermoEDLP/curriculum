@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PartsModule } from './parts/parts.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     NgbPaginationModule, 
     NgbAlertModule,
-    NgbModule
+    NgbModule,
+    PartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

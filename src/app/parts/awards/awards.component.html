@@ -1,0 +1,18 @@
+<section class="resume-section" id="awards">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{ info["es"].title }}</h2>
+    <ul class="fa-ul mb-0">
+      <li *ngFor="let v of info['es'].var">
+        <span class="fa-li"
+          ><i class="{{v.class}}"></i
+        ></span>
+        {{ v.title }}
+        <ul *ngIf="v.items">
+          <li *ngFor="let i of v.items">
+            {{i}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>

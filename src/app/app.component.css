@@ -1,3 +1,20 @@
 .navLink li {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.lang-flag {
+  height: 2rem;
+  margin-left: 5px;
+}
+
+.selected-lang {
+  border-bottom: 2px solid #bd5d38;
+  padding-bottom: 2px;
+}
+
+.lang-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 3rem 2rem 0 0
 }

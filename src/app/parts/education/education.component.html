@@ -1,0 +1,19 @@
+<section class="resume-section" id="education">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{ info[lang].title }}</h2>
+
+    <div
+      class="d-flex flex-column flex-md-row justify-content-between mb-5"
+      *ngFor="let edu of info[lang].items"
+    >
+      <div class="flex-grow-1">
+        <h3 class="mb-0">{{ edu.institute }}</h3>
+        <div class="subheading mb-3">{{ edu.grade }}</div>
+        <p *ngFor="let p of edu.obs">{{ p }}</p>
+      </div>
+      <div class="flex-shrink-0">
+        <span class="text-primary">{{ edu.date }}</span>
+      </div>
+    </div>
+  </div>
+</section>

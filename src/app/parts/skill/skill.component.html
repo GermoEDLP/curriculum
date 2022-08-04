@@ -1,0 +1,15 @@
+<section class="resume-section" id="skills">
+  <div class="resume-section-content">
+    <h2 class="mb-1">{{ info["es"].title }}</h2>
+
+    <div *ngFor="let skill of info['es'].skills">
+      <div class="subheading mb-1 mt-3">{{ skill.title }}</div>
+      <ul class="fa-ul mb-0">
+        <li *ngFor="let i of skill.items">
+          <span class="fa-li"><i class="fas fa-check"></i></span>
+          {{ i }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<section class="resume-section" id="about" style="padding-top: 3.5rem;">
+  <div class="resume-section-content" >
+    <h1 class="mb-0">
+      {{ info["es"].name }}
+      <span class="text-primary">{{ info["es"].lastname }}</span>
+    </h1>
+    <div class="subheading mb-5">
+      {{ info["es"].subheading1 }} ·
+      <a target="_top" href="{{ info['es'].subheading2.mail }}">
+        {{ info["es"].subheading2.title }}</a
+      >
+    </div>
+    <p class="lead mb-5">
+      {{ info["es"].text }}
+    </p>
+    <div class="social-icons">
+      <a
+        *ngFor="let social of info['es'].socialIcons"
+        class="social-icon"
+        href="{{ social.href }}"
+        target="{{ social.target }}"
+        ><i class="{{ social.icon }}"></i
+      ></a>
+    </div>
+  </div>
+</section>
